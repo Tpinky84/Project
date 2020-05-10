@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page
+I used the head, body and footer tags inside of the body tag. I have used the header, section, article, and aside tags.
+These basic HTML tags make up the basic structure of my web page. -->
+<html lang="en">
+    
+    <!-- HEAD -->
+
+    <head>
+        <!--
+                                  M02 Project V1 - Basic HTML and CSS
+        *************************************HOME PAGE*************************************
+        Author: Taryn Oliver
+        Date: 5/9/2020
+
+        Filename: index.html
+        -->
+
+        <meta charset="UTF-8">
+        <title>PinkyPie's Cookbook - Home</title>
+
+        <!-- M1LO8 Demonstrate the use of external style sheets
+        I linked a stylesheet below. -->
+        <link href="style.css" rel="stylesheet"/>
+
+        <!-- M2LO4 Demonstrate external, embedded, and inline styles
+        I have created an embedded style to add padding and color to the footer. -->
+        <style>
+            footer {
+                padding-left: 50px;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <!-- BODY -->
+
+    <body>
+        <header>
+            <!-- M1LO12 Create navigation using unordered lists
+            Below is my unordered navigation list. It links to the about page, and future pages. -->
+
+            <!-- NAVIGATION -->
+
+            <nav>
+                <ul>
+                    <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external
+                    These are site navigation hyperlinks. They link to my other pages. -->
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="Breakfast.html">Breakfast</a></li>
+                    <li class="nav"><a href="Lunch.html">Lunch</a></li>
+                    <li class="nav"><a href="Dinner.html">Dinner</a></li>
+                    <li class="nav"><a href="Dessert.html">Dessert</a></li>
+                    <li class="nav"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+
+        <section>
+            <aside>
+                <!-- M1LO9 Demonstrate the use of inline images
+                I have inserted an Image of PinkyPie cooking-->
+                <img id="homeimg" src="PinkyPieCook1.png" alt="">
+            </aside>
+            <article class="Welcome_text">
+                <h1>Welcome to PinkyPie's Cookbook!</h1>
+                <p>Within this cookbook I hope to show how much fun an creativity one can have with cooking.</p>
+                <p>In this website, you can find different types of recipes that will be fun for all ages.</p>
+                <p>I hope that you have a blast!</p>
+            </article>
+        </section>
+
+        <!-- LINKS -->
+
+        <section>
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external
+            These are targeted location hyperlinks using ids. They link to different sections of my attractions page.-->
+            <a href="Breakfast.html#Breakfastimg"><img src="Breakfast_Pancakes.jpeg" alt="Breakfast"></a>
+            <a href="Lunch.html#Lunchimg"><img src="Lunch_Salad.jpg" alt="Lunch"></a>
+            <a href="Dinner.html#Dinnerimg"><img src="Dinner_Steak.jpg" alt="Dinner"></a>
+            <a id="last" href="Dessert.html"><img src="Dessert_IceCream.jpeg" alt="Dessert"></a>
+            <!-- M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external
+            Within my citations for screenshots, I linked to Nintendo's website. It is an external link. -->
+            <p id="cite">"this is a link to show the characters of<a href="https://mylittlepony.hasbro.com/en-us"><i>"My Little Pony"</i></a> that you will see throughout my website".</p>
+        </section>
+    
+
+        <!-- FOOTER -->
+
+        <footer>
+            <!-- M2LO4 Demonstrate external, embedded, and inline styles 
+            I have created an inline style to adjust the font size of the text within the footer. -->
+            <p style="font-size: 0.5em;">This is an unofficial website. PinkyPie and the rest of "My Little Pony" characters that may be depicted within this website belong to Disney.</p>
+        </footer>
+    </body>
+</html>
